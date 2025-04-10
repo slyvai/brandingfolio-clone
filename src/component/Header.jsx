@@ -18,12 +18,11 @@ function Header() {
     };
 
     window.addEventListener("resize", handleResize);
-    
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -111,13 +110,15 @@ function Header() {
             <button className="hamburger" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
-            <ul className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`} >
+            <ul className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`}>
               <li>Home</li>
               <li>About</li>
               <li>Blog</li>
               <li>Pages</li>
               <li>Cart</li>
-              <li ><button className="contact-btn">Contact Us</button></li>
+              <li>
+                <button className="contact-btn">Contact Us</button>
+              </li>
             </ul>
           </div>
           <div className="header-btn">
