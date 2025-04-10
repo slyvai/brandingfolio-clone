@@ -1,0 +1,93 @@
+.section4-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  margin-top: 100px;
+}
+
+.section4-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.section4-text h1 {
+  font-size: 2.5em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.card-information2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.information1-sec4,
+.information2-sec4,
+.information3-sec4,
+.information4-sec4,
+.information5-sec4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 100px;
+}
+
+.card2-text2 {
+  text-align: left;
+  padding: 50px;
+}
+
+.card2-text2 h2 {
+  font-size: 2.5em;
+}
+
+.card2-text2 p {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.card2-text2 .buy {
+  border: 1px solid #000000;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 20px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card2-text2 .download {
+  border: 1px solid #000000;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 30px;
+  padding: 20px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card2-text2 button {
+  transition: transform 0.3s ease;
+}
+
+.card2-text2 button:hover {
+  transform: scale(0.9) !important;
+}
+
+.information1-sec4 img,
+.information2-sec4 img,
+.information3-sec4 img,
+.information4-sec4 img,
+.information5-sec4 img {
+  width: 700px;
+  border-radius: 10px;
+}

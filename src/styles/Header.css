@@ -1,0 +1,135 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+}
+
+.header-container {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.header-container img {
+  transition: transform 0.3s ease;
+}
+
+.header-container img:hover {
+  transform: scale(0.9);
+}
+
+.header-container button {
+  transition: transform 0.3s ease;
+}
+
+.header-container button:hover {
+  transform: scale(0.9);
+}
+
+.header-nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-nav ul li:hover {
+  color: #d6d6d6;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.header-btn button {
+  background-color: black;
+  color: aliceblue;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-section img {
+  width: 220px;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn2 {
+  padding: 0 0 0 200px;
+}
+
+.header-btn2 .template {
+  background-color: black;
+  color: aliceblue;
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-btn2 .explore {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.header-title {
+  font-size: 30px;
+  color: black;
+  padding: 100px 0 0 200px;
+}
+
+.header-title p {
+  font-size: 20px;
+  color: black;
+  font-weight: 200;
+}
+
+.header-section2 {
+  display: flex;
+}
+
+.hero-section {
+  background-image: linear-gradient(90deg, white 60%, #000000 60%);
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-image {
+  flex: 1;
+  margin: -100px 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  max-width: 330px;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+

@@ -1,0 +1,154 @@
+.footer-container {
+  background-color: #17151a;
+  padding: 100px;
+}
+
+.footer-section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe h1 {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-logo p {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.subscribe input {
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1em;
+  width: 450px;
+  height: 50px;
+}
+
+.subscribe button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  margin-left: 10px;
+  position: relative;
+  left: -150px;
+  font-weight: bold;
+}
+
+.brix-span {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.brix-span:hover {
+  color: #bdbdbd;
+}
+
+.webflow-span {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.webflow-span:hover {
+  color: #bdbdbd;
+}
+
+.logo {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-section2 {
+  font-size: 1.1em;
+}
+
+.footer-btn button {
+  padding: 20px 20px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contact {
+  background-color: black;
+  color: #ffffff;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.footer-links ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li:hover {
+  color: #f5f114;
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(0.9);
+}
+
+.footer-section button {
+  transition: transform 0.3s ease;
+}
+
+.footer-container button:hover {
+  transform: scale(0.9);
+}
