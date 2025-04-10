@@ -152,3 +152,75 @@
 .footer-container button:hover {
   transform: scale(0.9);
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 50px;
+  }
+
+  .footer-section2 {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    font-size: 1em;
+  }
+
+  .footer-logo {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    height: 40px;
+  }
+
+  .subscribe h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .subscribe button {
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 30px;
+    font-size: 0.9em;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .footer-links {
+    display: flex;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    font-size: 1em;
+  }
+
+  .footer-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-logo p {
+    font-size: 1em;
+  }
+
+  .footer-btn button {
+    padding: 15px 20px;
+    font-size: 0.9em;
+  }
+
+  .logo {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}

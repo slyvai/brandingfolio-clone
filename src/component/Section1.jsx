@@ -137,21 +137,21 @@ function Section1() {
 
           <div className="card-section1">
             <img
-              src="https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960fc4_brandingfolio-x-10-pages-included-branding-agency-webflow-template.png"
+              src="https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960f3d_brandingfolio-x-35-sections-included-branding-agency-webflow-template.png"
               alt=""
             />
             <div className="card-text">
-              <h2>19+ Pages</h2>
+              <h2>35+ Section</h2>
             </div>
           </div>
 
           <div className="card-section1">
             <img
-              src="https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960fc4_brandingfolio-x-10-pages-included-branding-agency-webflow-template.png"
+              src="https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960f50_brandingfolio-x-35-styles-and-symbols-included-branding-agency-webflow-template.png"
               alt=""
             />
             <div className="card-text">
-              <h2>19+ Pages</h2>
+              <h2>25+ Styles & Symbols</h2>
             </div>
           </div>
         </div>

@@ -105,6 +105,7 @@
   font-weight: 200;
 }
 
+
 .header-section2 {
   display: flex;
 }
@@ -117,9 +118,10 @@
   flex: 1;
 }
 
+
 .header-image {
   flex: 1;
-  margin: -100px 200px;
+  margin: -100px 10px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   overflow: hidden;
@@ -127,9 +129,172 @@
 
 .header-image img {
   width: 100%;
-  max-width: 330px;
-  margin: 20px;
+  max-width: 320px;
+  margin: 20px 100px;
   border: 2px solid black;
   border-radius: 20px;
 }
 
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none; 
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-menu.open {
+  display: block; 
+  position: absolute;
+  top: 70px; 
+  left: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.nav-menu.open li {
+  padding: 10px 0;
+}
+
+.contact-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+  }
+
+  .header-container {
+    height: auto;
+    text-align: center; 
+  }
+
+  .contact-btn{
+    display: block;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+
+  .header-container img,
+  .header-container button {
+    transform: none;
+    width: auto; 
+  }
+
+  .header-btn2 {
+    margin-bottom: 20px; 
+  }
+    
+    
+    
+    .header-btn,
+    
+    .header-btn2 {
+    
+    flex-direction: column;
+    
+    align-items: center;
+    
+     padding: 5px 5px;
+    
+    }
+
+  .header-nav {
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-nav ul {
+    display: none; 
+  }
+
+  .hamburger {
+    display: block; 
+  }
+
+  .header-btn {
+    display: none; 
+  }
+
+  .header-btn2 button {
+    margin-top: 10px;
+    padding: 15px 25px; 
+    font-size: 16px; 
+  }
+
+  .header-title {
+    font-size: 24px; 
+    padding: 20px 0 0 0; 
+  }
+
+  .header-title p {
+    font-size: 16px;
+  }
+
+
+  .header-image img {
+    max-width: 100%; 
+    margin: 10px;
+  }
+
+
+  .header-image {
+
+    margin: 0;
+    
+    }
+    
+    
+    
+  .header-image1 {
+    
+    display: flex;
+}
+    
+    
+    
+  .header-image2{
+    
+     display: flex;
+    }
+
+    .header-image img {
+
+      width: 100%;
+      
+       max-width: 220px;
+      
+      margin:10px;
+      
+      }
+
+  .header-section2 {
+    display: block;
+  }
+
+  .hero-section {
+    background-image: linear-gradient(white 60%, black 60%); 
+  }
+
+  .header-logo {
+    max-width: 150px; 
+  }
+}

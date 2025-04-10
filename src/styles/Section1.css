@@ -134,3 +134,59 @@
 .container-information1 button:hover {
   transform: scale(0.9) !important;
 }
+
+
+@media (max-width: 768px) {
+  .section1-text {
+    font-size: 1.2em;
+  }
+
+  .section1-text h1 {
+    font-size: 1.6em;
+  }
+
+  .section1-text p {
+    font-size: 0.7em;
+  }
+
+  .section1-image {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-section1 {
+    max-width: 90%;
+  }
+
+  .card-text {
+    width: 100%;
+  }
+
+  .container-information1 {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .information1,
+  .information2 {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .image-figma,
+  .image-webflow {
+    width: 100%;
+  }
+
+  .information1-text,
+  .information2-text {
+    padding: 10px 40px;
+    font-size: 1em;
+  }
+
+  .btn-section1 {
+    padding: 15px 30px;
+    font-size: 1em;
+  }
+}

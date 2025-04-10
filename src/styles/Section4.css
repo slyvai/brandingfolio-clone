@@ -91,3 +91,55 @@
   width: 700px;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .section4-container {
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .section4-text h1 {
+    font-size: 2em;
+  }
+
+  .card-information2 {
+    gap: 15px;
+  }
+
+  .information1-sec4,
+  .information2-sec4,
+  .information3-sec4,
+  .information4-sec4,
+  .information5-sec4 {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .card2-text2 {
+    font-size: 2em;
+  }
+
+  .card2-text2 h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .card2-text2 p {
+    font-size: 0.6em;
+  }
+
+  .card2-text2 .buy,
+  .card2-text2 .download {
+    padding: 15px;
+    font-size: 0.5em;
+
+  }
+
+  .information1-sec4 img,
+  .information2-sec4 img,
+  .information3-sec4 img,
+  .information4-sec4 img,
+  .information5-sec4 img {
+    width: 130%;
+  }
+}

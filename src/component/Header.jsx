@@ -1,48 +1,102 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/Header.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
 function Header() {
   const imageRef1 = useRef(null);
   const imageRef2 = useRef(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    gsap.fromTo(
-      imageRef1.current,
-      {
-        y: 10,
-      },
-      {
-        y: -400,
-        scrollTrigger: {
-          trigger: ".hero-section",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      }
-    );
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
 
-    gsap.fromTo(
-      imageRef2.current,
-      {
-        y: -200,
-      },
-      {
-        y: 10,
-        duration: 1,
-        scrollTrigger: {
-          trigger: ".hero-section",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      }
-    );
+    window.addEventListener("resize", handleResize);
+    
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
+
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  useEffect(() => {
+    if (screenWidth > 768) {
+      gsap.fromTo(
+        imageRef1.current,
+        {
+          y: 10,
+        },
+        {
+          y: -400,
+          scrollTrigger: {
+            trigger: ".hero-section",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        imageRef2.current,
+        {
+          y: -200,
+        },
+        {
+          y: 10,
+          duration: 1,
+          scrollTrigger: {
+            trigger: ".hero-section",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+    } else {
+      gsap.fromTo(
+        imageRef1.current,
+        {
+          x: -110,
+        },
+        {
+          x: -210,
+          scrollTrigger: {
+            trigger: ".header-section2",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        imageRef2.current,
+        {
+          x: -310,
+        },
+        {
+          x: -210,
+          scrollTrigger: {
+            trigger: ".header-section2",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+    }
+  }, [screenWidth]);
 
   return (
     <>
@@ -50,16 +104,20 @@ function Header() {
         <div className="header-section">
           <div className="header-nav">
             <img
+              className="header-logo"
               src="https://cdn.prod.website-files.com/66d745be9e684f30f3960c6a/66d745be9e684f30f3960ed7_logo-web-brandingfolio-x-webflow-template.svg"
               alt=""
             />
-            <button className="menu">&#9776;</button>
-            <ul>
+            <button className="hamburger" onClick={toggleMobileMenu}>
+              {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+            </button>
+            <ul className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`} >
               <li>Home</li>
               <li>About</li>
               <li>Blog</li>
               <li>Pages</li>
               <li>Cart</li>
+              <li ><button className="contact-btn">Contact Us</button></li>
             </ul>
           </div>
           <div className="header-btn">

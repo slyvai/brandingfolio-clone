@@ -66,3 +66,38 @@
 .btn-section3:hover {
   transform: scale(0.9) !important;
 }
+
+@media (max-width: 768px) {
+  .section3-text {
+    font-size: 1.4em;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  .section3-text h1 {
+    font-size: 1.6em;
+  }
+
+  .section3-text p {
+    font-size: 0.7em;
+  }
+
+  .section3-images {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .section3-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-section3 {
+    max-width: 100%;
+  }
+
+  .btn-section3 {
+    padding: 15px 30px;
+    font-size: 1em;
+  }
+}

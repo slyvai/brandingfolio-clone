@@ -108,3 +108,43 @@
 .section5-img2:hover {
   transform: scale(0.9);
 }
+
+@media (max-width: 768px) {
+  .section5-container {
+    flex-direction: column;
+  }
+
+  .section5-img1,
+  .section5-img2 {
+    max-width: 90%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .section5-text,
+  .section5-text2 {
+    font-size: 1.1em;
+    margin-top: 50px;
+  }
+
+  .webflow1,
+  .section5-img2 .brix1 {
+    width: 25%;
+  }
+
+  .section5-img1 .webflow2 {
+    width: 100%;
+    max-width: 40%;
+  }
+
+  .section5-img2 .brix2 {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .section5-img1 button,
+  .section5-img2 button {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
