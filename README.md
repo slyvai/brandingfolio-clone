@@ -10,14 +10,6 @@ This project is a recreation of the **BrandingFolio Template** website using **R
 - **Responsive**
 - Deployed on **Vercel** or **GitHub Pages**.
 
-## Evaluation Criteria
-The project will be evaluated based on:
-- **Visual similarity** to the original BrandingFolio Template.
-- **Proper GSAP implementation** for animations.
-- **React code structure** following best practices.
-- **Overall code quality** and maintainability.
-- **Responsiveness** across various devices.
-
 ## Installation & Setup
 To run this project locally, follow these steps:
 
